@@ -162,44 +162,40 @@ public class MyTestCases {
 		int randomIndexForItem = rand.nextInt(websitesForTheItems.length);
 
 		driver.get(websitesForTheItems[randomIndexForItem]);
-		
-		WebElement ListOfItems = driver.findElement(By .cssSelector(".thumbnails.row"));
-		
-		int totalNumOfItems = ListOfItems.findElements(By .tagName("li")).size();
-		
+
+		WebElement ListOfItems = driver.findElement(By.cssSelector(".thumbnails.row"));
+		int totalNumOfItems = ListOfItems.findElements(By.tagName("li")).size();
 		int RandomIndexForItem = rand.nextInt(totalNumOfItems);
-		
+
 		Thread.sleep(3000);
-		
-		ListOfItems.findElements(By .tagName("li")).get(RandomIndexForItem).click();
-		
-		WebElement Container = driver.findElement(By .cssSelector(".thumbnails.grid.row.list-inline"));
-		
-		int numberOfProducts = Container.findElements(By .cssSelector(".col-md-3.col-sm-6.col-xs-12")).size();
-		
+
+		ListOfItems.findElements(By.tagName("li")).get(RandomIndexForItem).click();
+
+		WebElement Container = driver.findElement(By.cssSelector(".thumbnails.grid.row.list-inline"));
+		int numberOfProducts = Container.findElements(By.cssSelector(".col-md-3.col-sm-6.col-xs-12")).size();
 		int RandomIndexForProducts = rand.nextInt(numberOfProducts);
-		
+
 		Thread.sleep(3000);
-		
-		Container.findElements(By .cssSelector(".col-md-3.col-sm-6.col-xs-12")).get(RandomIndexForProducts).click();
-		
-		WebElement ULList = driver.findElement(By .className("productpagecart"));
-		
-		int LiItem = ULList.findElements(By .tagName("li")).get(0).findElements(By .tagName("span")).size();
-		
-		if (LiItem>0) {
-			
+
+		Container.findElements(By.cssSelector(".col-md-3.col-sm-6.col-xs-12")).get(RandomIndexForProducts).click();
+
+		WebElement ULList = driver.findElement(By.className("productpagecart"));
+
+		int LiItem = ULList.findElements(By.tagName("li")).get(0).findElements(By.tagName("span")).size();
+
+		if (LiItem > 0) {
+
 			driver.get(myWebsite);
-			
+
 			System.out.println("Sorry, The Item is Out Of Stock ");
 			String ExpectedResult = "https://automationteststore.com/";
 			String ActualResult = driver.getCurrentUrl();
 			Assert.assertEquals(ActualResult, ExpectedResult, "expected != actual");
-			
-		}else{
-			
-			driver.findElement(By .className("cart")).click();
-			
+
+		} else {
+
+			driver.findElement(By.className("cart")).click();
+
 			Thread.sleep(2000);
 			String ActualResult = driver.findElement(By.className("heading1")).getText();
 			String ExpectedResult = "Shopping Cart";
@@ -208,19 +204,9 @@ public class MyTestCases {
 			boolean ExpectedValueForCheckOut = true;
 			boolean ActualValueForCheckOut = driver.findElement(By.id("cart_checkout1")).isDisplayed();
 			Assert.assertEquals(ActualValueForCheckOut, ExpectedValueForCheckOut, "expected != actual");
-			
+
 		}
 
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
