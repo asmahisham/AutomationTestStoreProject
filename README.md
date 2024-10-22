@@ -1,2 +1,3 @@
 "# firstProject"
-This project reflects QA automation skills
+
+This project reflects QA automation skills, Selenuim basics.
