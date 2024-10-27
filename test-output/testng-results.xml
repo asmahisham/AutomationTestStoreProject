@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-21T22:15:41 GST" name="Default suite" finished-at="2024-10-21T22:16:00 GST" duration-ms="18677">
+  <suite started-at="2024-10-27T22:00:12 GST" name="Default suite" finished-at="2024-10-27T22:00:58 GST" duration-ms="45588">
     <groups>
     </groups>
-    <test started-at="2024-10-21T22:15:41 GST" name="Default test" finished-at="2024-10-21T22:16:00 GST" duration-ms="18677">
+    <test started-at="2024-10-27T22:00:12 GST" name="Default test" finished-at="2024-10-27T22:00:58 GST" duration-ms="45588">
       <class name="MyTestCases">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:MyTestCases@4a194c39]" started-at="2024-10-21T22:15:41 GST" name="SetUp" finished-at="2024-10-21T22:15:44 GST" duration-ms="2573" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:MyTestCases@72c28d64]" started-at="2024-10-27T22:00:12 GST" name="SetUp" finished-at="2024-10-27T22:00:15 GST" duration-ms="3052" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="AddItemToTheCart()[pri:4, instance:MyTestCases@4a194c39]" started-at="2024-10-21T22:15:44 GST" name="AddItemToTheCart" finished-at="2024-10-21T22:16:00 GST" duration-ms="16066" status="PASS">
+        <test-method signature="SignUp()[pri:1, instance:MyTestCases@72c28d64]" started-at="2024-10-27T22:00:15 GST" name="SignUp" finished-at="2024-10-27T22:00:30 GST" duration-ms="14459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp -->
+        <test-method signature="LogOut()[pri:2, instance:MyTestCases@72c28d64]" started-at="2024-10-27T22:00:30 GST" name="LogOut" finished-at="2024-10-27T22:00:34 GST" duration-ms="4819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+        <test-method signature="LogIn()[pri:3, instance:MyTestCases@72c28d64]" started-at="2024-10-27T22:00:34 GST" name="LogIn" finished-at="2024-10-27T22:00:36 GST" duration-ms="1486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogIn -->
+        <test-method signature="AddItemToTheCart()[pri:4, instance:MyTestCases@72c28d64]" started-at="2024-10-27T22:00:36 GST" name="AddItemToTheCart" finished-at="2024-10-27T22:00:58 GST" duration-ms="21711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddItemToTheCart -->
